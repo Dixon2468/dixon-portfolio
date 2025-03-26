@@ -18,14 +18,26 @@ body{
         
         
                       /* Header styles */
-header {
+                      
+                      header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed; /* Keeps it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensures the header is always above the hero section */
+}
+/*header {
     background-color: #222;
     color: white;
     padding: 20px 0;
     text-align: center;
     position: relative;
     
-}
+}*/
 
 /*.container {
     display: flex;
@@ -185,12 +197,15 @@ nav ul li a {
 }
 @media screen and (max-width: 768px) {
     .hero {
-        height: 80vh; /* Adjust height on smaller screens */
+        height: 100vh; /* Still full-screen height */
+        background-size: cover; /* Ensures the image always fills */
     }
 
-    #full-image img {
-        height: auto;
-        max-height: 80vh; /* Prevents the image from being too large */
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 3;
     }
 }
 
