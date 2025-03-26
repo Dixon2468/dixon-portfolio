@@ -1,0 +1,174 @@
+/*General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Centered Hamburger Menu */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    background: #222;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+}
+
+nav ul.show {
+    display: flex; /* Show when toggled */
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Projects Section */
+#projects {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+/*Centering Business Cards to Fit Header */
+#projects {
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+
+
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: auto%; /* Ensures it aligns with the header */
+    margin: auto;
+}
+.project-item {
+    
+    text-align: center;
+    margin-top: 30px;
+}
+.project-item img {
+    width: auto;
+    max-width: 400px;
+    max-height: auto;
+    object-fit: cover;
+    
+}
+
+
+
+
+
+/* Poster Section */
+.poster-container {
+    text-align: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.poster-container img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.see-more {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.see-more:hover {
+    background-color: #444;
+}
+
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+/* Keep Footer in Place */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #222;
+    color: white;
+}

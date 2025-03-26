@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DIXON TECH| Portfolio</title>
+    <link rel="stylesheet" href="msyles.css">
+    <link rel="stylesheet" href="stylep.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    
+           <header>
+    <div class="container">
+        <h1>DIXON TECH </h1>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        
+      
+        <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+
+            <!-- Business Cards Section -->
+            <h2>Business Cards</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="cruz.jpg" alt="Reamie Designs">
+                    <p>Elegant Business Card</p>
+                </div>
+              <div class="project-item">
+                    <img src="cruz.jpg" alt="Business Card 2">
+                    <p>Minimalist Business Card</p>
+                </div>
+            </div>
+
+            <!-- Logos Section -->
+           <h2>Logos</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Logo 1">
+                    <p>Brand Identity Logo</p>
+                </div>
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Logo 2">
+                    <p>Modern Tech Logo</p>
+                </div>
+            </div>
+            <!-- Posters Section -->
+          <h2>Posters</h2>
+            <div class="poster-container">
+                <img src="dstv.jpg" alt="Featured Poster">
+                <p>Event Promotion Poster</p>
+                </div>
+                
+                
+                <div class="poster-container">
+                <img src="mal.jpg" alt="Featured Poster">
+                <p>Event Promotion Poster</p>
+                
+                <button class="see-more" onclick="seeMore()">See More</button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2025 DIXON TECH INC. All rights reserved.</p>
+    </footer>
+    
+    
+      <!--  <footer>
+        <p>&copy; 2025 DIXON TECH INC. All rights reserved.</p>
+    </footer>-->
+
+    <script>
+        function seeMore() {
+            window.location.href = "posters.html"; // Link to a separate posters page
+        }
+    </script>
+
+</body>
+</html>
