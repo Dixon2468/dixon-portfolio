@@ -1,0 +1,46 @@
+/* Centering Business Cards to Fit Header */
+#projects {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: auto%; /* Ensures it aligns with the header */
+    margin: auto;
+}
+
+.project-item {
+    width: auto; /* Keeps business cards compact */
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto; /* Keeps images from being too long */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.project-item p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Keep Footer in Place */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #222;
+    color: white;
+}

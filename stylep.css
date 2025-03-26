@@ -87,38 +87,6 @@ h2 {
 }
 
 
-/*Centering Business Cards to Fit Header */
-#projects {
-    padding: 50px 0;
-    text-align: center;
-}
-
-
-
-
-
-.project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: auto%; /* Ensures it aligns with the header */
-    margin: auto;
-}
-.project-item {
-    
-    text-align: center;
-    margin-top: 30px;
-}
-.project-item img {
-    width: auto;
-    max-width: 400px;
-    max-height: auto;
-    object-fit: cover;
-    
-}
-
-
 
 
 
