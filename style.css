@@ -135,7 +135,16 @@ nav ul li a {
     display: block;
 }
 
+/* Hover Effect */
+nav ul li a:hover {
+    color: red;
+}
 
+/* Click Effect (Stays Red Until Another is Clicked) */
+nav ul li a.active {
+    color: red;
+    font-weight: bold; /* Optional */
+}
 
 /* Full-Screen Image */
 /*#full-image {

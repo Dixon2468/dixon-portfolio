@@ -59,10 +59,97 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     display: block;
+    
+    
 }
 
 
+            /* Hover Effect */
+nav ul li a:hover {
+    color: red;
+}
 
+/* Click Effect (Stays Red Until Another is Clicked) */
+nav ul li a.active {
+    color: red;
+    font-weight: bold; /* Optional */
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Project Category Titles */
+.project-category h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Grid for Each Category */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center; /* Ensures alignment when rotated */
+    margin: 0 auto;
+    max-width: 1200px; /* Prevents excessive space on large screens */
+}
+
+/* Each Project Item */
+.project-item {
+    width: 100%; /* Full width on small screens */
+    max-width: 300px; /* Limits size on large screens */
+    text-align: center;
+    margin: 0 auto; /* Centers the project item */
+}
+
+.project-item img {
+    width: 100%; /* Ensures images are responsive */
+    height: auto;
+    max-height: 300px; /* Limits height to fit screens */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Name Below Each Image */
+.project-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+    .projects-grid {
+        justify-content: space-between;
+    }
+    .project-item {
+        width: 45%; /* Two per row on tablets */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project-item {
+        width: 30%; /* Three per row on large screens */
+    }
+}
+
+/* Ensure Projects Stay Centered when Rotated on Phones */
+@media screen and (orientation: portrait) {
+    .projects-grid {
+        justify-content: center; /* Keeps items centered on portrait */
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .projects-grid {
+        justify-content: center; /* Keeps items centered on landscape */
+    }
+}
 
 
 
@@ -84,7 +171,9 @@ nav ul li a {
 h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    text-align: center;
 }
+
 
 
 
