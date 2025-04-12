@@ -4,90 +4,127 @@
     text-align: center;
 }
 
+
+
+
+
 .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
-    max-width: auto%; /* Ensures it aligns with the header */
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
+/* Create four equal columns that sits next to each other */
 .project-item {
-    width: auto; /* Keeps business cards compact */
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
 .project-item img {
-    width: 100%;
-    height: auto; /* Keeps images from being too long */
-    object-fit: cover;
-    border-radius: 4px;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
-.project-item p {
-    font-size: 14px;
-    margin-top: 5px;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .project-item {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
-/* Keep Footer in Place */
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    background: #222;
-    color: white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*/*Centering Business Cards to Fit Header */
-/*#projects {
-    padding: 50px 0;
-    text-align: center;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .project-item {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 
-
-
-
-.project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    max-width: auto%; /* Ensures it aligns with the header */
-   /* margin: auto;
-}
-.project-item {
-    
-    text-align: center;
+        .poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
     margin-top: 30px;
 }
-.project-item img {
-    width: auto;
-    max-width: 400px;
-    max-height: auto;
-    object-fit: cover;
-    gap: 30px;;
-    
+
+.poster-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
+.poster-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.poster-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.poster-actions a {
+    padding: 6px 12px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.poster-actions a:hover {
+    background-color: #005fa3;
+}
+
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.poster-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.poster-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.poster-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.poster-actions a {
+    padding: 6px 12px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.poster-actions a:hover {
+    background-color: #005fa3;
+}
